@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=BricolageGrotesque&display=swap" rel="stylesheet"> <!-- Добавил ссылку на изменение шрифта.??? задача -->
+  
+    <style>
+        /* Стили для таблицы */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 2px solid black;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+ <script>
+   function toggleForm() {
+        var loginForm = document.getElementById("login-form");
+        var singInForm = document.getElementById("singin-form");
+
+        loginForm.style.display = loginForm.style.display === "none" ? "block" : "none";
+        singInForm.style.display = singInForm.style.display === "none" ? "block" : "none";
+    }
+    function signOut() {
+       window.location.href = "/log_in.html";
+    }
+  </script>
+<div class="logo">ArtCake</div>
+  <div class="nav-part">
+    <ul class="nav-list" style="display: flex; justify-content: flex-end;">
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">Orders</a></li>  
+      <li><a href="#">Confectioners</a></li>
+      <li><a href="#">Products</a></li>
+    </ul>
+  </div>
+​  <div class="sign-out-block">
+    <a href="../page_registr/log_in.html">LogOut</a>
+</div>
+    
+    <h1>Manager</h1>
+
+    <h2>Confectioners</h2>
+    <table>
+        <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Phone number</th>
+            <th>Email</th>
+            <th>Experience</th>
+            
+        </tr>
+        <tr>
+            <td>Rose</td>
+            <td>Dark</td>
+            <td>04912345678</td>
+            <td>rose.dark@gmail.com</td>
+            <td>10 years</td>
+           
+        </tr>
+       
+        <tr>
+            <td>Emily</td>
+            <td>Way</td>
+            <td>04912345673</td>
+            <td>emily.way@gmail.com</td>
+            <td>1 year</td>
+           
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>Miller</td>
+            <td>04912345695</td>
+            <td>sam.miler@gmail.com</td>
+            <td>4 years</td>
+           
+        </tr>
+        <tr>
+            <td>Robert</td>
+            <td>Wilson</td>
+            <td>04912345456</td>
+            <td>robert.wilson@gmail.com</td>
+            <td>2 years</td>
+            
+        </tr>
+        <!-- Для  остальных кондитеров таким же образом -->
+    </table>
+    <div class="button-container">
+        <button class="custom-button">Set confectioner</button>
+        </div>
+    <footer class="footer-with-background">
+        <div class="footer-content">
+       <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Help</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+          <div class="footer-text">
+            <h3>ArtCake</h3>
+            <p>Here you will find many new culinary ideas, </p>
+            <p>become the author of your own Cookbook,</p>
+            <p>meet like-minded friends and can chat about everything in the world!</p>
+          </div>
+        </div>
+      </footer>
+      
+      
+        <footer class="footer"></footer>
+          
+            <hr class="footer-line"> <!-- Добавляем горизонтальную линию -->
+        </footer >
+      
+</body>
+</html>

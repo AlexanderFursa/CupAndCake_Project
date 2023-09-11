@@ -9,32 +9,25 @@
 <!-- ссылка на подключение внешнего css -->
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=BricolageGrotesque&display=swap" rel="stylesheet"> <!-- Добавил ссылку на изменение шрифта.??? задача -->
-
- </head>
-
+</head>
 <!--для внешних скриптов JS .Это помогает ускорить начальную загрузку страницы, но может замедлить её отображение,-->
-
 ​<body>
   <script>
 
-    
-    /*прописали JS для перехода SingIn на Login*/
-
-      function toggleForm() {
+/*прописали JS для перехода SingIn на Login*/
+     function toggleForm() {
         var loginForm = document.getElementById("login-form");
         var singInForm = document.getElementById("singin-form");
 
         loginForm.style.display = loginForm.style.display === "none" ? "block" : "none";
         singInForm.style.display = singInForm.style.display === "none" ? "block" : "none";
     }
-
     /* JS для перехода из SingOut на SingIn */
     function signOut() {
         // Здесь можно добавить код для выхода пользователя из системы или выполнить другие действия
         // ...
-
-        // Перенаправляем пользователя на страницу SignIn
-        window.location.href = "/log_in.html";
+       // Перенаправляем пользователя на страницу SignIn
+         window.location.href = "/log_in.html";
     }
   </script>
 

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  <!-- ссылка на подключение внешнего css -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=BricolageGrotesque&display=swap" rel="stylesheet"> <!-- Добавил ссылку на изменение шрифта.??? задача -->
+  
+    <style>
+      table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 2px solid black;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr {
+            background-color: rgb(243, 236, 225);
+        }
+    </style>
+ 
+</head>
+<body>
+ <script>
+      function toggleForm() {
+        var loginForm = document.getElementById("login-form");
+        var singInForm = document.getElementById("singin-form");
+
+        loginForm.style.display = loginForm.style.display === "none" ? "block" : "none";
+        singInForm.style.display = singInForm.style.display === "none" ? "block" : "none";
+    }
+  function signOut() {
+        
+        window.location.href = "/log_in.html";
+    }
+  </script>
+<div class="logo">ArtCake</div>
+  <div class="nav-part">
+    <ul class="nav-list" style="display: flex; justify-content: flex-end;">
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">Orders</a></li>  
+      <li><a href="#">Confectioners</a></li>
+      <li><a href="#">Products</a></li>
+    </ul>
+  </div>
+​  <div class="sign-out-block">
+   
+
+  <a href="../page_registr/log_in.html">LogOut</a>
+</div>
+    <h1>Manager</h1>
+    <h2>Products</h2>
+    <h3>Cheesecakes</h3>
+        
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Product name</th>
+            <th>Grams</th>
+            <th>Price</th>
+            <th>Description</th>
+          
+        </tr>
+        <tr>
+            <td>Cheesecake</td>
+            <td>Chocolate</td>
+            <td>550g</td>
+            <td>50,00</td>
+            <td>Savor pure chocolate perfection with our Chocolate Chiffon Cake. Crafted to blend the airy lightness of chiffon with the exquisite richness of premium chocolate, this cake weighs 550g. Experience the harmonious balance of tenderness and flavor in each delectable bite. A slice of heaven awaits – order now and treat yourself.</td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>Cheesecake</td>
+            <td>Lilly</td>
+            <td>550g</td>
+            <td>45,00</td>
+            <td>Lilly Cheesecake offers a delightful treat in the form of finely crafted 550-gram cakes. With a perfect combination of creamy texture and unique flavors, each slice of Lilly Cheesecake 550 grams provides a true pleasure for your taste buds. Whether you're a fan of the classic New York style or prefer more experimental fruity variations, Lilly Cheesecake offers diverse options to satisfy any palate. Each cheesecake is made with high-quality ingredients and meticulous attention to detail, ensuring an unforgettable dessert experience. Treat yourself to an unforgettable culinary delight with the rich and velvety Lilla Cheesecakes, each weighing 550 grams.</td>
+            <td>
+            <!--для нужной кнопки выбора.вставить-->
+            </td>
+        </tr>
+        <tr>
+            <td>Cheesecake</td>
+            <td>Raspberry</td>
+            <td>550g</td>
+            <td>55,00</td>
+            <td>Indulge in the exquisite flavor of our Raspberry Cheesecake, now available in a generous 550-gram size. Each slice of this masterpiece is a symphony of velvety creaminess and the vibrant tang of ripe raspberries. Our Raspberry Cheesecake, weighing 550 grams, offers a delightful balance of sweetness and tartness that dances on your taste buds with every bite. Made with the finest ingredients and expert craftsmanship, this cheesecake is a true sensation for dessert enthusiasts. Elevate your dessert experience with the luscious delight of our 550g Raspberry Cheesecake, a perfect fusion of flavors and textures.</td>
+            <td>
+
+             </td>
+        </tr>
+        <tr>
+            <td>Cheesecake</td>
+            <td>Vanilla</td>
+            <td>550g</td>
+            <td>35,00</td>
+            <td>Experience the pure elegance of our Vanilla Cheesecake, now available in an ample 550-gram size. Each decadent slice of this masterpiece encapsulates the timeless allure of smooth vanilla melded with rich, creamy indulgence. Our 550g Vanilla Cheesecake presents a symphony of flavors, offering a delicate yet luxurious taste that gratifies your senses with every bite. Crafted meticulously with the finest ingredients, this cheesecake is a testament to culinary finesse, ensuring a dessert experience beyond compare. Elevate your dessert affair with the opulent delight of our Vanilla Cheesecake, perfectly harmonizing flavors and textures in every heavenly forkful.</td>
+            <td>
+          
+            </td>
+        </tr>
+        <tr>
+            <td>Wildberry</td>
+            <td>Vanilla</td>
+            <td>550g</td>
+            <td>40,00</td>
+            <td>Discover the enchanting fusion of flavors in our WildBerry Cheesecake, now available in a generous 550-gram size. Each slice of this masterpiece takes your taste buds on a journey through a medley of succulent wild berries, perfectly balanced with the richness of creamy cheesecake. Our 550g WildBerry Cheesecakeoffers a symphony of sweet and tart notes, creating a harmonious and unforgettable taste experience with every luscious bite. Crafted with meticulous attention to detail and using only the finest ingredients, this cheesecake is a celebration of nature's bounty and culinary craftsmanship. Elevate your dessert moments with the captivating delight of our WildBerry Cheesecake, a tantalizing blend of flavors and textures that's sure to leave you craving more.</td>
+            <td>
+
+            </td>
+        </tr>  
+    </table>
+       <div class="button-container">
+        <button class="custom-button">Set New Product</button>
+      </div>
+      
+<!--Для Cupcakes-->
+<h3>Cupcakes</h3>
+<table>
+<tr>
+    <th>Category</th>
+    <th>Product name</th>
+    <th>Grams</th>
+    <th>Price</th>
+    <th>Description</th>
+  
+</tr>
+<tr>
+    <td>Cupcakes</td>
+    <td>Blackberry</td>
+    <td>50g</td>
+    <td>5,50</td>
+    <td>Savor pure chocolate perfection with our Blackberry Cake. Crafted to blend the airy lightness of chiffon with the exquisite richness of premium chocolate, this cake weighs 550g. Experience the harmonious balance of tenderness and flavor in each delectable bite. A slice of heaven awaits – order now and treat yourself.</td>
+    <td>
+    </td>
+</tr>
+<tr>
+    <td>Cupcakes</td>
+    <td>Chocolate</td>
+    <td>50g</td>
+    <td>4,50</td>
+    <td>Discover the enchanting fusion of flavors in our Wild Chocolate Cupcakes, now available in a generous 550-gram size. Each slice of this masterpiece takes your taste buds on a journey through a medley of succulent wild berries, perfectly balanced with the richness of creamy cheesecake. Our 550g Wild Berry Cheesecake offers a symphony of sweet and tart notes, creating a harmonious and unforgettable taste experience with every luscious bite. Crafted with meticulous attention to detail and using only the finest ingredients, this cheesecake is a celebration of nature's bounty and culinary craftsmanship. Elevate your dessert moments with the captivating delight of our Chocolate Cupcakes, a tantalizing blend of flavors and textures that's sure to leave you craving more.</td>
+    <td>
+    <!--для нужной кнопки выбора.вставить-->
+    </td>
+</tr>
+<tr>
+    <td>Cupcakes</td>
+    <td>Ferrero</td>
+    <td>50g</td>
+    <td>5,00</td>
+    <td>Indulge in the exquisite flavor of our Ferrero Cupcake, now available in a generous 550-gram size. Each slice of this masterpiece is a symphony of velvety creaminess and the vibrant tang of ripe raspberries. Our Ferrero Cupcake, weighing 550 grams, offers a delightful balance of sweetness and tartness that dances on your taste buds with every bite. Made with the finest ingredients and expert craftsmanship, this cheesecake is a true sensation for dessert enthusiasts. Elevate your dessert experience with the luscious delight of our 550g Ferrero Cupcake, a perfect fusion of flavors and textures.</td>
+    <td>
+
+     </td>
+</tr>
+<tr>
+    <td>Cupcakes</td>
+    <td>Wildberry</td>
+    <td>50g</td>
+    <td>6,00</td>
+    <td>Wildberry Cupcakes offers a delightful treat in the form of finely crafted 550-gram cakes. With a perfect combination of creamy texture and unique flavors, each slice of Wildberry Cupcakes 550 grams provides a true pleasure for your taste buds. Whether you're a fan of the classic New York style or prefer more experimental fruity variations, Wildberry Cupcakes offers diverse options to satisfy any palate. Each cheesecake is made with high-quality ingredients and meticulous attention to detail, ensuring an unforgettable dessert experience. Treat yourself to an unforgettable culinary delight with the rich and velvety Wildberry Cupcakes, each weighing 550 grams.</td>
+    <td>
+  
+    </td>
+</tr>
+</table>
+<div class="button-container">
+<button class="custom-button">Set New Product</button>
+</div>
+
+<!--для Macarons-->
+<h3>Macarons</h3>
+<table>
+<tr>
+    <th>Category</th>
+    <th>Product name</th>
+    <th>Grams</th>
+    <th>Price</th>
+    <th>Description</th>
+  
+</tr>
+<tr>
+    <td>Macarons</td>
+    <td>BloodOrange</td>
+    <td>15g</td>
+    <td>2,00</td>
+    <td>BloodOrange Macarons Description
+        Indulge in the exquisite flavor of our BloodOrange Macarons, now available in a generous 550-gram size. Each slice of this masterpiece is a symphony of velvety creaminess and the vibrant tang of ripe raspberries. Our BloodOrange Macarons, weighing 550 grams, offers a delightful balance of sweetness and tartness that dances on your taste buds with every bite. Made with the finest ingredients and expert craftsmanship, this cheesecake is a true sensation for dessert enthusiasts. Elevate your dessert experience with the luscious delight of our 550g BloodOrange Macarons, a perfect fusion of flavors and textures.</td>
+    <td>
+    </td>
+</tr>
+<tr>
+    <td>Macarons</td>
+    <td>Lemon</td>
+    <td>15g</td>
+    <td>3,00</td>
+    <td>Lemon Macarons Description
+        Indulge in the exquisite flavor of our Lemon Macarons, now available in a generous 550-gram size. Each slice of this masterpiece is a symphony of velvety creaminess and the vibrant tang of ripe raspberries. Our Lemon Macarons, weighing 550 grams, offers a delightful balance of sweetness and tartness that dances on your taste buds with every bite. Made with the finest ingredients and expert craftsmanship, this cheesecake is a true sensation for dessert enthusiasts. Elevate your dessert experience with the luscious delight of our 550g Lemon Macarons, a perfect fusion of flavors and textures.</td>
+    <td>
+    <!--для нужной кнопки выбора.вставить-->
+    </td>
+</tr>
+<tr>
+    <td>Macarons</td>
+    <td>Chocolate</td>
+    <td>15g</td>
+    <td>4,00</td>
+    <td>Chocolate Macarons Description
+        Indulge in the exquisite flavor of our Chocolate Macarons, now available in a generous 550-gram size. Each slice of this masterpiece is a symphony of velvety creaminess and the vibrant tang of ripe raspberries. Our Chocolate Macarons, weighing 550 grams, offers a delightful balance of sweetness and tartness that dances on your taste buds with every bite. Made with the finest ingredients and expert craftsmanship, this cheesecake is a true sensation for dessert enthusiasts. Elevate your dessert experience with the luscious delight of our 550g Chocolate Macarons, a perfect fusion of flavors and textures.</td>
+    <td>
+
+     </td>
+</tr>
+<tr>
+    <td>Macarons</td>
+    <td>Raspberry</td>
+    <td>15g</td>
+    <td>5,30</td>
+    <td>Raspberries Macarons Description
+        Indulge in the exquisite flavor of our Raspberries Macarons, now available in a generous 550-gram size. Each slice of this masterpiece is a symphony of velvety creaminess and the vibrant tang of ripe raspberries. Our Lemon Macarons, weighing 550 grams, offers a delightful balance of sweetness and tartness that dances on your taste buds with every bite. Made with the finest ingredients and expert craftsmanship, this cheesecake is a true sensation for dessert enthusiasts. Elevate your dessert experience with the luscious delight of our 550g Raspberries Macarons, a perfect fusion of flavors and textures.</td>
+    <td>
+  
+    </td>
+    <tr>
+        <td>Macarons</td>
+        <td>Velvet</td>
+        <td>15g</td>
+        <td>4,20</td>
+        <td>Velvet Macarons Description
+            Savor pure chocolate perfection with our Chocolate Chiffon Cake. Crafted to blend the airy lightness of chiffon with the exquisite richness of premium chocolate, this cake weighs 550g. Experience the harmonious balance of tenderness and flavor in each delectable bite. A slice of heaven awaits – order now and treat yourself..</td>
+        <td>
+      
+    </td>   
+</tr>
+
+</table>
+<div class="button-container">
+<button class="custom-button">Set New Product</button>
+</div>
+
+<!--для Mousse-->
+<h3>Mousse</h3>
+<table>
+<tr>
+    <th>Category</th>
+    <th>Product name</th>
+    <th>Grams</th>
+    <th>Price</th>
+    <th>Description</th>
+  
+</tr>
+<tr>
+    <td>Mousse</td>
+    <td>Apple mousse</td>
+    <td>550g</td>
+    <td>30,00</td>
+    <td>Apple Mousse Description
+        Apple Mousse offers a delightful treat in the form of finely crafted 550-gram cakes. With a perfect combination of creamy texture and unique flavors, each slice of Apple Mousse 550 grams provides a true pleasure for your taste buds. Whether you're a fan of the classic New York style or prefer more experimental fruity variations, Apple Mousse offers diverse options to satisfy any palate. Each cheesecake is made with high-quality ingredients and meticulous attention to detail, ensuring an unforgettable dessert experience. Treat yourself to an unforgettable culinary delight with the rich and velvety Apple Mousse, each weighing 550 grams.</td>
+    <td>
+
+    </td>
+</tr>
+<tr>
+    <td>Mousse</td>
+    <td>Blackberry</td>
+    <td>550g</td>
+    <td>40,00</td>
+    <td>Blackberry Mousse Description
+        Indulge in the exquisite flavor of our Blackberry Mousse, now available in a generous 550-gram size. Each slice of this masterpiece is a symphony of velvety creaminess and the vibrant tang of ripe raspberries. Our Blackberry Mousse, weighing 550 grams, offers a delightful balance of sweetness and tartness that dances on your taste buds with every bite. Made with the finest ingredients and expert craftsmanship, this cheesecake is a true sensation for dessert enthusiasts. Elevate your dessert experience with the luscious delight of our 550g Blackberry Mousse, a perfect fusion of flavors and textures.</td>
+    <td>
+    <!--для нужной кнопки выбора.вставить-->
+    </td>
+</tr>
+<tr>
+    <td>Macarons</td>
+    <td>Chocolate</td>
+    <td>15g</td>
+    <td>4,00</td>
+    <td>Chocolate Macarons Description
+        Indulge in the exquisite flavor of our Chocolate Macarons, now available in a generous 550-gram size. Each slice of this masterpiece is a symphony of velvety creaminess and the vibrant tang of ripe raspberries. Our Chocolate Macarons, weighing 550 grams, offers a delightful balance of sweetness and tartness that dances on your taste buds with every bite. Made with the finest ingredients and expert craftsmanship, this cheesecake is a true sensation for dessert enthusiasts. Elevate your dessert experience with the luscious delight of our 550g Chocolate Macarons, a perfect fusion of flavors and textures.</td>
+    <td>
+
+     </td>
+</tr>
+<tr>
+    <td>Mousse</td>
+    <td>Raspberry</td>
+    <td>550g</td>
+    <td>50,00</td>
+    <td>Raspberry Mousse Description
+        Indulge in the exquisite flavor of our Raspberry Mousse, now available in a generous 550-gram size. Each slice of this masterpiece is a symphony of velvety creaminess and the vibrant tang of ripe raspberries. Our Raspberry Mousse, weighing 550 grams, offers a delightful balance of sweetness and tartness that dances on your taste buds with every bite. Made with the finest ingredients and expert craftsmanship, this cheesecake is a true sensation for dessert enthusiasts. Elevate your dessert experience with the luscious delight of our 550g Raspberry Mousse, a perfect fusion of flavors and textures.</td>
+    <td>
+  
+    </td>
+    <tr>
+        <td>Mousse</td>
+        <td>Strawberry</td>
+        <td>550g</td>
+        <td>45,90</td>
+        <td>Strawberry Mousse Description
+            Indulge in the exquisite flavor of our Strawberry Mousse, now available in a generous 550-gram size. Each slice of this masterpiece is a symphony of velvety creaminess and the vibrant tang of ripe raspberries. Our Strawberry Mousse, weighing 550 grams, offers a delightful balance of sweetness and tartness that dances on your taste buds with every bite. Made with the finest ingredients and expert craftsmanship, this cheesecake is a true sensation for dessert enthusiasts. Elevate your dessert experience with the luscious delight of our 550g Strawberry Mousse, a perfect fusion of flavors and textures.</td>
+        <td>
+      
+    </td>   
+</tr>
+</table>
+<div class="button-container">
+<button class="custom-button">Set New Product</button>
+</div>
+
+<footer class="footer-with-background">
+    <div class="footer-content">
+   <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">Help</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="footer-text">
+        <h3>ArtCake</h3>
+        <p>Here you will find many new culinary ideas, </p>
+        <p>become the author of your own Cookbook,</p>
+        <p>meet like-minded friends and can chat about everything in the world!</p>
+      </div>
+    </div>
+  </footer>
+  <footer class="footer"></footer>
+      
+        <hr class="footer-line"> 
+    </footer >
+  
+</body>
+</html>
